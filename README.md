@@ -12,3 +12,9 @@ what happens when we power on ?
 1. CPU will go to ROM and try to bring bootloader inside RAM.
 2. ONCE Bootloader is loaded it will start the OS by telling the memory address of the Kernal to the CPU
 3. Bootloder will also store the DTB - (device tree blob) inside a register which kernel uses to known about the hardwares associated with the devices.
+
+
+## HOSTAPD
+- it is a linux deamon process that we use to manage the wireless interface. it is a user space software which will turn the linux device into an access point.
+
+Hostapd talks with client like GUI using control interface. This is the port 8877 where hostapd will be listening to.
