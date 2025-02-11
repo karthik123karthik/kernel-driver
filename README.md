@@ -18,3 +18,10 @@ what happens when we power on ?
 - it is a linux deamon process that we use to manage the wireless interface. it is a user space software which will turn the linux device into an access point.
 
 Hostapd talks with client like GUI using control interface. This is the port 8877 where hostapd will be listening to.
+
+
+## SYSTEM CALL
+- there are two modes in kernel usermode and kernel mode
+- to switch to kernel mode I need system call
+
+    user mode (write system call) ------------------interrupt-----------> kernel mode(trap handler will start and  system call number in system call table and execute that function and return back control to the user program)
