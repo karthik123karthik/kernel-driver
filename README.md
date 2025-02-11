@@ -25,3 +25,18 @@ Hostapd talks with client like GUI using control interface. This is the port 887
 - to switch to kernel mode I need system call
 
     user mode (write system call) ------------------interrupt-----------> kernel mode(trap handler will start and  system call number in system call table and execute that function and return back control to the user program)
+
+## FILE Handling in linux
+- each file will have - owner, group, others
+- -rwxr-xr-x 1 karthikgk mxlall 249 Oct 25 09:51 env.sh ( 7 for user 5 for group 5 for others)
+
+Type of files
+- - : regular file
+- d : directory
+- l : softlink
+- c : charcter device file
+- b : block device file
+- s : local socket file
+- p : named pipe
+
+  
