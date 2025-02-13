@@ -1,0 +1,7 @@
+## Race Condition
+- whenever two process are trying to access same shared resource then the condition arise called race condition.
+- whenever there is racecondition there will be inconsistency we will see in the resource so it is very important to avoid the race conditions.
+
+## Atomicity
+- it is a condition where one process can execute that at a time(only one call can be made at a time either full or zero).
+
