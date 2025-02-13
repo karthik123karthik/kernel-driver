@@ -5,3 +5,8 @@
 ## Atomicity
 - it is a condition where one process can execute that at a time(only one call can be made at a time either full or zero).
 
+## FILE TABLE
+- there will be one file table which will be specific to a process that contain file descriptor.
+- then there will be a open system table which is not process specific. it will have offset, file details and pointer to INode
+- then Inode is a datastructure for file which contain info like type, uid, gid, time, address. to know the file Inode info run - stat filename
+
