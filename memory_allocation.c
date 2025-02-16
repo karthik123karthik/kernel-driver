@@ -3,6 +3,9 @@
 
 int main(){
     // assign 10bytes of dynamic memory
+    // internally this functions uses brk() && sbrk() system calls
+    // brk() system call will point the program break of the heap to the new position
+    // sbrk() system call will increment the program break pointer by the given bytes
     int* ptr = (int*)malloc(10*sizeof(int));
     if(ptr == NULL){
         printf("Memory allocation failed\n");
