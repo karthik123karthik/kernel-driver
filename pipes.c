@@ -5,6 +5,10 @@
 #include <sys/wait.h>
 
 
+// pipes is used for IPC - it uses byte stream 
+// it is unidirectional
+// fd[0] is read end and fd[1] is write end.
+
 int main(){
     int fd[2];
 
