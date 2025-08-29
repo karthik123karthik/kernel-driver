@@ -4,6 +4,8 @@
 // semaphore is an interger that system nenver allows to go below zero
 // main use of semaphore is resource pool management if we have multiple identical resource we use semaphore.
 
+// UnNamed Semaphore will be stored in the RAM memory.
+
 #include <stdio.h>
 #include <fcntl.h>
 #include <sys/stat.h>
