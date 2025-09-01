@@ -25,3 +25,31 @@ int main(){
     printf("Exiting main thread\n");
     pthread_exit(0);
 }
+
+//Pthread JOIN
+
+#include <pthread.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+void* thread_func(void* arg){
+    int num = atoi((char*)arg);
+    sleep(num);
+    printf("Exiting thread\n");
+    return (void*)(long)num;
+}
+
+int main(){
+    pthread_t t;
+    void* res;
+    if (pthread_create(&t, NULL, thread_func, "20") < 0){
+        perror("THREAD CREATION FAILED\n");
+        exit(1);
+    }
+
+    sleep(10);
+    printf("Exiting main thread\n");
+    pthread_join(t, &res);
+    printf("RETURNED VALUE IS : %d\n", (int)res);
+}
