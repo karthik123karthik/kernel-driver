@@ -1,3 +1,11 @@
+// Signals are the software interrupts that gives a mechanism to 
+// notify a process that a specific event has occurred.
+// Each signal have a unique Number associated with it
+// Each signal will be having default handler for eg SEGV generate core dump
+
+//EXECVE - system call loads new program in process memory
+// current process will be terminated and new process will replace virtual memory
+
 #include <stdio.h>
 #include <signal.h>
 #include<sys/types.h>
